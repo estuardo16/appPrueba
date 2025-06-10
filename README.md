@@ -1,54 +1,65 @@
-# React + TypeScript + Vite
+# 🚀 Aplicación de Listado de Usuarios con Búsqueda, Paginación y Exportación a PDF
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web construida con React y TypeScript que consume una API REST pública (`https://dummyjson.com/users`) para mostrar un listado interactivo de usuarios. Permite buscar usuarios por nombre, navegar a través de los resultados mediante paginación y exportar la vista actual (filtrada y paginada) a un archivo PDF.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌐 Enlace a la Aplicación Desplegada
 
-## Expanding the ESLint configuration
+Puedes ver la aplicación aquí:
+[https://app-prueba-estuardos-projects-2d20a08d.vercel.app/)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tecnologías Utilizadas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+* **[React](https://react.dev/)**: Biblioteca de JavaScript para construir interfaces de usuario.
+* **[TypeScript](https://www.typescriptlang.org/)**: Superset de JavaScript que añade tipado estático.
+* **[Vite](https://vitejs.dev/)**: Herramienta de construcción rápida para proyectos web modernos.
+* **[Axios](https://axios-http.com/)**: Cliente HTTP basado en promesas para el navegador y Node.js.
+* **[jspdf](https://jspdf.org/)**: Librería para generar PDFs en el lado del cliente.
+* **[html2canvas](https://html2canvas.hertzen.com/)**: Permite tomar "capturas de pantalla" de elementos HTML y convertirlos en imágenes (canvas).
+* **[react-spinners](https://www.davidhu.io/react-spinners/)**: Componentes de spinners de carga para React.
+* **CSS**: Para el estilizado de la aplicación.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 💻 Instrucciones de Montaje del Entorno y Ejecución Local
+
+
+### Prerrequisitos
+
+Instalar lo siguiente:
+
+* **Node.js**: Versión 18.x o superior. se puede descargar desde [nodejs.org](https://nodejs.org/).
+* **npm** (Node Package Manager) o **Yarn**: npm viene incluido con Node.js.
+
+### Pasos para la Ejecución Local
+
+1.  **Clonar el Repositorio:**
+    Abrir terminal y clona este repositorio usando Git.
+
+    ```bash
+    git clone [https://github.com/estuardo16/appPrueba.git]
+     ```
+
+2.  **Navegar al Directorio del Proyecto:**
+    EntraR en la carpeta del proyecto que se ha clonado.
+
+    ```bash
+    cd user-list-app
+    ```
+
+3.  **Instalar Dependencias:**
+    Instalar todas las dependencias del proyecto.
+
+    ```bash
+    npm install axios jspdf html2canvas react-spinners
+    
+
+4.  **Iniciar la Aplicación en Modo Desarrollo:**
+    Esto iniciará el servidor de desarrollo de Vite y abrirá la aplicación en tu navegador (normalmente en `http://localhost:5173/`).
+
+    ```bash
+    npm run dev
+  
+
