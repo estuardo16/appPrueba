@@ -6,7 +6,7 @@ Este proyecto es una aplicación web construida con React y TypeScript que consu
 
 ## 🌐 Enlace a la Aplicación Desplegada
 
-Puedes ver la aplicación aquí:
+Link de aplicacion:
 [https://app-prueba-estuardos-projects-2d20a08d.vercel.app/)
 
 
