@@ -57,8 +57,7 @@ Instalar lo siguiente:
     
 
 4.  **Iniciar la Aplicación en Modo Desarrollo:**
-    Esto iniciará el servidor de desarrollo de Vite y abrirá la aplicación en tu navegador (normalmente en `http://localhost:5173/`).
-
+   
     ```bash
     npm run dev
   
