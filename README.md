@@ -46,7 +46,7 @@ Instalar lo siguiente:
     EntraR en la carpeta del proyecto que se ha clonado.
 
     ```bash
-    cd user-list-app
+    cd appPrueba
     ```
 
 3.  **Instalar Dependencias:**
